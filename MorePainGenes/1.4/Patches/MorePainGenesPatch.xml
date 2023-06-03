@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/GeneDef[defName="Pain_Extra"]/forcedTraits</xpath>
+        <value>
+            <painFactor>1.5</painFactor>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationRemove" MayRequire="sarg.alphagenes">
+                <xpath>/Defs/GeneDef[defName="AG_Painless"]</xpath>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="sarg.alphagenes">
+                <xpath>/Defs/XenotypeDef[defName="AG_Taukai"]/genes/li[14]</xpath>
+                <value>
+                    <li>Pain_Immune</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

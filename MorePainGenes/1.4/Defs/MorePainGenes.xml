@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="GenePainBase">
+        <defName>Pain_Immune</defName>
+        <label>pain immunity</label>
+        <labelShortAdj>pain-immune</labelShortAdj>
+        <description>Carriers of this gene feel no pain. Reduced neuron activity in the brain's nociception centers makes pain disappear. This can be advantageous sometimes, and dangerous other times.</description>
+        <iconPath>Gene_PainImmune</iconPath>
+        <displayOrderInCategory>32</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <painFactor>0</painFactor>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <symbolPack>
+        <prefixSymbols>
+            <li><symbol>dull</symbol></li>
+            <li><symbol>daze</symbol></li>
+            <li><symbol>tough</symbol></li>
+        </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePainBase">
+        <defName>Pain_VeryReduced</defName>
+        <label>super reduced pain</label>
+        <labelShortAdj>pain-dull</labelShortAdj>
+        <description>Carriers of this gene feel one quarter as much pain compared to a baseliner. Reduced neuron activity in the brain's nociception centers makes pain dull and faint. This can be advantageous sometimes, and dangerous other times.</description>
+        <iconPath>UI/Icons/Genes/Gene_PainReduced</iconPath>
+        <displayOrderInCategory>31</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <painFactor>0.25</painFactor>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <symbolPack>
+        <prefixSymbols>
+        <li><symbol>dull</symbol></li>
+        <li><symbol>daze</symbol></li>
+        <li><symbol>tough</symbol></li>
+        </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePainBase">
+        <defName>Pain_SlightlyExtra</defName>
+        <label>slightly extra pain</label>
+        <labelShortAdj>a little wimpy</labelShortAdj>
+        <description>Carriers of this gene feel a little more pain than others given the same injuries. Neuron activity in the brain's nociception center is amplified, so pain feels extra-intense and fiery. This can be protective, but overall it's considered a negative and makes it hard to push through difficult situations.</description>
+        <iconPath>UI/Icons/Genes/Gene_ExtraPain</iconPath>
+        <painFactor>1.25</painFactor>
+        <displayOrderInCategory>25</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wimpo</symbol></li>
+                <li><symbol>whino</symbol></li>
+                <li><symbol>cowar</symbol></li>
+                <li><symbol>cry</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>whiner</symbol></li>
+                <li><symbol>wimp</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePainBase">
+        <defName>Pain_SuperExtra</defName>
+        <label>super extra-pain</label>
+        <labelShortAdj>super wimpy</labelShortAdj>
+        <description>Carriers of this gene feel a lot more pain than others given the same injuries. Neuron activity in the brain's nociception center is amplified, so pain feels extra-intense and fiery. This can be protective, but overall it's considered a negative and makes it hard to push through difficult situations.</description>
+        <iconPath>UI/Icons/Genes/Gene_ExtraPain</iconPath>
+        <painFactor>1.75</painFactor>
+        <displayOrderInCategory>19</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wimpo</symbol></li>
+                <li><symbol>whino</symbol></li>
+                <li><symbol>cowar</symbol></li>
+                <li><symbol>cry</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>whiner</symbol></li>
+                <li><symbol>wimp</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePainBase">
+        <defName>Pain_ExtremeExtra</defName>
+        <label>extreme extra-pain</label>
+        <labelShortAdj>extremely wimpy</labelShortAdj>
+        <description>Carriers of this gene feel twice as much pain as others given the same injuries. Neuron activity in the brain's nociception center is amplified, so pain feels extra-intense and fiery. This can be protective, but overall it's considered a negative and makes it hard to push through difficult situations.</description>
+        <iconPath>UI/Icons/Genes/Gene_ExtraPain</iconPath>
+        <painFactor>2</painFactor>
+        <displayOrderInCategory>18</displayOrderInCategory>
+        <biostatMet>4</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wimpo</symbol></li>
+                <li><symbol>whino</symbol></li>
+                <li><symbol>cowar</symbol></li>
+                <li><symbol>cry</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>whiner</symbol></li>
+                <li><symbol>wimp</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>
