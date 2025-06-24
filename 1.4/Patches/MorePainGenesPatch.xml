@@ -15,12 +15,6 @@
 				    <hideGene>true</hideGene>
 			    </value>
             </li>
-            <li Class="PatchOperationReplace" MayRequire="sarg.alphagenes">
-                <xpath>/Defs/XenotypeDef[defName="AG_Taukai"]/genes/li[14]</xpath>
-                <value>
-                    <li>Pain_Immune</li>
-                </value>
-            </li>
         </operations>
     </Operation>
 </Patch>
