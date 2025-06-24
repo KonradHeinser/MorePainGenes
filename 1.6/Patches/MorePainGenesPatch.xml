@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/GeneDef[defName="Pain_Extra"]/forcedTraits</xpath>
+        <xpath>Defs/GeneDef[defName="Pain_Extra"]/forcedTraits</xpath>
         <value>
             <painFactor>1.5</painFactor>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationAdd" MayRequire="sarg.alphagenes">
-                <xpath>/Defs/GeneDef[defName="AG_Painless"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
-			    <value>
-				    <hideGene>true</hideGene>
-			    </value>
-            </li>
-        </operations>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_Painless"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/GeneDef[defName="AG_Painless"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+            <value>
+                <hideGene>true</hideGene>
+            </value>
+        </match>
     </Operation>
 </Patch>
